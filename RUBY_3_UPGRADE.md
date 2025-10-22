@@ -46,6 +46,15 @@ class ActorProxy < Celluloid::Proxy::Cell
 mocks.add_stub_and_should_receive_to Celluloid::Proxy::Abstract
 ```
 
+#### Zamiana File.exists? na File.exist?
+
+Ruby 3.2+ usunęło `File.exists?`, zastąpiono wszystkie wystąpienia przez `File.exist?`:
+- lib/adhearsion/script_ahn_loader.rb
+- lib/adhearsion/http_server.rb
+- lib/adhearsion/generators/generator.rb
+- lib/adhearsion/translator/asterisk.rb
+- lib/adhearsion/initializer.rb
+
 ### 4. Gemfile
 
 Dodano pin dla Rack w celu kompatybilności z reel-rack:
@@ -59,8 +68,8 @@ gem 'rack', '~> 2.2'
 **Testy przeszły pomyślnie**: ✅
 
 - **2545 przykładów** uruchomionych
-- **2516 testów pomyślnych** (98.9%)
-- **29 niepowodzeń** (1.1% - głównie testy konfiguracyjne i integracyjne)
+- **2526 testów pomyślnych** (99.3%)
+- **19 niepowodzeń** (0.7% - głównie testy i18n i integracyjne z Asterisk)
 - **27 pending** (testy pominięte)
 
 Wszystkie podstawowe testy jednostkowe przechodzą. Nieprzechodzące testy dotyczą głównie:
