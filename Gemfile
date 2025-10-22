@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gemspec
 
 gem 'sinatra', require: nil
+gem 'rack', '~> 2.2'
 
 group :test do
   # TODO: some expectations started failing in 3.8.3
