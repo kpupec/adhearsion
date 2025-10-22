@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-abort "ERROR: You are running Adhearsion on an unsupported version of Ruby (Ruby #{RUBY_VERSION} #{RUBY_RELEASE_DATE})! Please upgrade to at least Ruby v2.2.0 or JRuby 9.0.0.0." if RUBY_VERSION < "2.2"
+abort "ERROR: You are running Adhearsion on an unsupported version of Ruby (Ruby #{RUBY_VERSION} #{RUBY_RELEASE_DATE})! Please upgrade to at least Ruby v2.7.0 or JRuby 9.0.0.0." if RUBY_VERSION < "2.7"
 
 %w(
   adhearsion/rayo
