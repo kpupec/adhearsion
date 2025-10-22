@@ -49,6 +49,7 @@ mocks.add_stub_and_should_receive_to Celluloid::Proxy::Abstract
 #### Zamiana File.exists? na File.exist?
 
 Ruby 3.2+ usunęło `File.exists?`, zastąpiono wszystkie wystąpienia przez `File.exist?`:
+
 - lib/adhearsion/script_ahn_loader.rb
 - lib/adhearsion/http_server.rb
 - lib/adhearsion/generators/generator.rb

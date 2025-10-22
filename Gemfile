@@ -4,6 +4,7 @@ gemspec
 
 gem 'sinatra', require: nil
 gem 'rack', '~> 2.2'
+gem 'syslog', require: false # Ruby 3.4+ compatibility
 
 group :test do
   # TODO: some expectations started failing in 3.8.3
